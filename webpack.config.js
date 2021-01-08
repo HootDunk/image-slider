@@ -6,5 +6,13 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  module: {
+    rules: [
+      {
+        test: /\.jpe?g$/,
+        use: ["file-loader"]
+      }
+    ]
+  },
   mode: 'production',
 };

@@ -1,3 +1,9 @@
+import img1 from './assets/img1.jpg';
+import img2 from './assets/img2.jpg';
+import img3 from './assets/img3.jpg';
+import img4 from './assets/img4.jpg';
+import img5 from './assets/img5.jpg';
+
 function Image(id, path) {
   this.id = id;
   this.path = path;
@@ -5,11 +11,11 @@ function Image(id, path) {
 }
 
 const images = [
-  new Image(1, "assets/img1.jpg"),
-  new Image(2, "assets/img2.jpg"),
-  new Image(3, "assets/img3.jpg"),
-  new Image(4, "assets/img4.jpg"),
-  new Image(5, "assets/img5.jpg"),
+  new Image(1, img1),
+  new Image(2, img2),
+  new Image(3, img3),
+  new Image(4, img4),
+  new Image(5, img5),
 ];
 
 const imageToActive = (id) => {
